@@ -1,0 +1,14 @@
+{% extends "aa.html" %}
+{% block text %}
+    <div class="div-row">
+        <div class="div col-sm-5">
+            <h2><i>Update Student Data</h2></i>
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Update" class="btn btn-primary">
+
+            </form>
+        </div>
+    </div>
+{% endblock text %}
